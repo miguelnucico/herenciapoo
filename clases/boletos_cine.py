@@ -1,6 +1,4 @@
-#Tiene cliente: función y precio base de $90. Sabe calcular su precio y generar su ticket con el formato Cliente - Función: $precio. 
-#BoletoEstudiante:Cuesta lo mismo que un boleto normal, con un 30 % de descuento. 
-#BoletoCortesia:Siempre cuesta $0.
+
 
 class boleto(object):
     def __init__(self, cliente, funcion):
@@ -16,10 +14,20 @@ class boleto(object):
 
 
 class boleto_estudiante(boleto):
+    def __init__(self, cliente, precio_base, funcion):
+        super().__init__(cliente, funcion)
+        self.precio_base = precio_base
+
     def calcular_precio(self):
         return self.precio_base * 0.7
 
 
 class boleto_cortesia(boleto):
+    def __init__(self, cliente, funcion):
+        super().__init__(cliente, funcion)
+        self.precio_base = 0
+    
     def calcular_precio(self):
-        return 0
+        return self.precio_base
+        
+

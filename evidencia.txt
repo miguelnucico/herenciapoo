@@ -1,0 +1,10 @@
+PS C:\Users\196214-5\Documents\herenciapoo> python .\main_boleto.py
+Regina - Función A: $90.00
+Yamel - Función B: $63.00
+Erick - Función C: $0.00
+
+
+PS C:\Users\196214-5\Documents\herenciapoo> python .\main_estacionamiento.py
+ABC123 - Tiempo: 3: $60.00
+XYZ789 - Tiempo: 0: $500.00
+LMN456 - Tiempo: 12: $290.00
